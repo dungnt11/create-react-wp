@@ -43,11 +43,11 @@ const config = {
       hash: true
     })
   ],
-  // OPTIONAL
-  // Reload On File Change
-  watch: true,
   // Development Tools (Map Errors To Source File)
-  devtool: "source-map"
+  devtool: "source-map",
+  devServer: {
+    port: 3000
+  }
 };
 // Exports
 module.exports = config;
